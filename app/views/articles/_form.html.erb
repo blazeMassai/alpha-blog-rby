@@ -1,0 +1,22 @@
+<%= bootstrap_form_with(model: @article,  local: true) do |f| %>
+                    <p>
+                        <!-- <%= f.label :title %> -->
+                        <%= f.text_field :title %>
+                    </p>
+
+                    <p>
+                        <!-- <%= f.label :description %> -->
+                        <%= f.text_area :description, help: "Describe your post" %>
+                    </p>
+
+                    <p>
+                       
+                        <div class="justify-content-center">
+                            <pre class="tab">
+                                <%= f.submit "Save Article", class: 'btn btn-primary' %>  <%= link_to 'Return to Articles', articles_path  %>
+                            </pre>                               
+                         
+                        </div>
+                    </p>
+
+                <% end %>
