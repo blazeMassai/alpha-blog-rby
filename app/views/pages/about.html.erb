@@ -12,31 +12,7 @@
 </head>
 
 <body>
-
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
-    <div class="container">
-        <a class="navbar-brand" href="#">CodeCroc~7</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="/welcome/about">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="/articles">Articles</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-              </li>
-          </ul>
-      </div>
-    </div>
-  </nav>
+<%= render 'pages/navbar' %>
 
     <div class="jumbotron jumbotron-fluid bg-dark text-white">
       <div class="container">
@@ -45,6 +21,24 @@
         </p>
       </div>
     </div>
+
+<!--  beginning of content-->
+    <div class="container">
+
+      <div class="card">
+        <div class="card-header">
+          The Word.
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>What God has esteemed no one can demean</p>
+            <footer class="blockquote-footer">Bishop B.Idahosa in <cite title="Source Title">Sounds that live.</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+
+    </div>
+<!--  end content-->
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

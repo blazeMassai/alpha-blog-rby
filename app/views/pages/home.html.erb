@@ -17,39 +17,35 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
-    <div class="container">
-        <a class="navbar-brand" href="#">CodeCroc~7</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="/welcome/about">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="/articles">Articles</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-              </li>
-          </ul>
-      </div>
-    </div>
-  </nav>
+<%= render 'pages/navbar' %>
 
-<div class="jumbotron jumbotron-fluid bg-dark text-white">
+<div class="jumbotron jumbotron-fluid text-white">
   <div class="container">
-    <h1 class="display-4">Alpha Blog</h1>
+    <h1 class="display-4">Mgalilaya Blog</h1>
     <p class="lead">Live To Impact
     </p>
   </div>
 </div>
 
+<!--  beginning of content-->
+
+  <div class="container">
+    <div class="card text-center">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Possibility thinking.</h5>
+        <p class="card-text">Whatever is in your hand today, it was in your mind yesterday. Whatever is too big for your mind is too big for your hand;</p>
+        <a href="/welcome/about" class="btn btn-success">Jua zaidi</a>
+      </div>
+      <div class="card-footer text-muted">
+        2 days ago
+      </div>
+    </div>
+  </div>
+
+<!--  end content-->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
   crossorigin="anonymous"></script>

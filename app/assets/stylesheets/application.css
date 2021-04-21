@@ -10,6 +10,34 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ 
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Mono:ital,wght@1,700&display=swap');
+
+ body {
+     font-family: 'Josefin Sans', sans-serif !important;
+    background: #f2f2f2;
+ }
+
+ .action-btn a:link, .action-btn a:visited, .action-btn a:hover, .action-btn a:active {
+    text-decoration: none !important;
+    color: #fff;
+  }
+  .action-btn a:hover{
+    color: #75FF33;
+  }
+
+  .jumbotron {
+    /* background: url('<%= asset_path 'h2r.jpg' %>'); */
+    background: linear-gradient(45deg, #6d4a05, #c00def);
+    /* background-size: cover; */
+  }
+
+  .navbar {
+    background: rgb(65, 40, 40);
+  }
